@@ -3,20 +3,20 @@ import styles from "../../styles/Sidebar.module.css";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-export default function Sidebar() {
+export default function Sidebar({ amount }) {
   const { list } = useSelector(({ categories }) => categories);
-
+  const cat = list.filter((_, i) => i < amount);
   return (
     <section className={styles.sidebar}>
       <div className={styles.title}>Categories</div>
       <nav>
         <ul className={styles.menu}>
-          {list.map(({ id, name }) => {
+          {cat.map(({ id, name }) => {
             return (
               <li key={id}>
                 <NavLink
                   className={({ isActive }) =>
-                    `${styles.link} ${isActive ? styles.active : ""}`
+                    `${styles.link} ${isActive && styles.active}`
                   }
                   to={`/categories/${id}`}
                 >
