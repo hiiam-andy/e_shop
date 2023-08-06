@@ -16,7 +16,7 @@ export default function Sidebar() {
               <li key={id}>
                 <NavLink
                   className={({ isActive }) =>
-                    `${styles.link} ${isActive ? styles.active : ""}`
+                    `${styles.link} ${isActive && styles.active}`
                   }
                   to={`/categories/${id}`}
                 >
