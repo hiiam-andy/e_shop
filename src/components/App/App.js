@@ -8,7 +8,6 @@ import Sidebar from "../Sidebar/Sidebar";
 
 import { getCategories } from "../../features/categories/categoriesSlice";
 import { getProducts } from "../../features/products/productsSlice";
-
 function App() {
   const dispatch = useDispatch();
 
