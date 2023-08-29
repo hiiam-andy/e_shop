@@ -6,6 +6,7 @@
 .list {
   margin-top: 24px;
   display: flex;
+  justify-content: space-between;
   column-gap: 20px;
 }
 
@@ -20,7 +21,8 @@
   height: 230px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: white;
 }
 
 .title {

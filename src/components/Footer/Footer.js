@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../utils/routes";
 
-import styles from "../../styles/Footer.module.css";
+import styles from "./Footer.module.css";
 
 import logo from "../../images/logo.svg";
 
