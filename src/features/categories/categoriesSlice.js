@@ -27,7 +27,6 @@ const categoriesSlice = createSlice({
     });
 
     builder.addCase(getCategories.fulfilled, (state, action) => {
-      console.log(action.payload);
       state.list = action.payload;
       state.isLoading = false;
     });

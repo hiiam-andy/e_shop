@@ -8,7 +8,6 @@ import womens from "../../images/womens.jpg";
 
 export default function Categories({ title, products = [], amount }) {
   const list = products.filter((_, i) => i < amount);
-  console.log(list);
 
   return (
     <section className={style.section}>

@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import categoriesSlice from "./categories/categoriesSlice";
 import productsSlice from "./products/productsSlice";
-
-import { apiSlice } from "./api/apiSlice";
+import { apiSlice } from "./api/apiQuery";
 
 export const store = configureStore({
   reducer: {

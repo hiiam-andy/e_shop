@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!list.length) return;
-    dispatch(filterByPrice(100));
+    dispatch(filterByPrice(20));
   }, [dispatch, list.length]);
 
   return (
@@ -26,7 +26,7 @@ const Home = () => {
       <Products products={list} amount={5} title="Trending" />
       <Categories products={categories.list} amount={5} title="Worth seeing" />
       <Banner />
-      <Products products={filtered} amount={5} title="Less than 100$" />
+      <Products products={filtered} amount={5} title="Less than 20$" />
     </>
   );
 };
